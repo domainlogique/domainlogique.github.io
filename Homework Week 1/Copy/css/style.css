@@ -1,0 +1,28 @@
+body {
+
+background-color: #4B0082;
+font-family: Futura;
+color: #eeeeee;
+text-align: center;
+}
+
+h1 {
+font-family: Georgia;
+font-style: italic;
+font-weight: normal;
+color: #15cb97;
+font-size: 75px;
+
+}
+
+a {
+
+color: #15cb97;
+text-decoration: none;
+}
+
+img {
+
+	width: 1000px;
+	height: 500px;
+}
