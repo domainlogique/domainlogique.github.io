@@ -1,0 +1,103 @@
+
+h1 {
+    color: #444444;
+    font-family: Lato;
+    line-height: 1.5px;
+}
+h2{
+   color: black;
+}
+h3{
+   color: black;
+
+}
+h4{
+    color: #cccccc;
+    font-family: Lato;
+    padding-top: 54px:;
+
+}
+img {
+    width:720px;
+    padding: none;
+    border-width: 6px; 
+    border: solid;
+    border-color: white;
+    
+    
+} 
+
+p{
+   
+    width:720px;
+    padding: none;
+    border-width: 6px; 
+    border: solid;
+    border-color: white;
+    
+
+}
+span {
+    color: #DD0000;
+}
+
+a {
+    color: #dddddd;
+    padding: 6px;
+
+}
+
+.nav:hover {
+    color: black;
+}
+}
+
+.link:hover {
+    color: aa0000;
+}
+
+.cont {
+    
+    width:720px;
+    padding-bottom: 54px;
+    border-width: 6px; 
+    border: solid;
+    border-bottom-color: #dddddd;
+    border-top-color: white;
+    border-left-color: white;
+    border-right-color: white;
+    color: red;
+    text-align: right;
+
+}
+
+.copyright {
+
+    color:#bbbbbb;
+
+}
+
+
+.date {
+    color:#cccccc;
+    font-family: Lato;
+}
+
+
+Links:
+    #DD0000
+
+Links hover:
+    #aa0000
+
+
+
+Navigation links hover:
+    black
+
+Date: 
+    #cccccc
+
+
+Copyright
+    #bbbbbb
