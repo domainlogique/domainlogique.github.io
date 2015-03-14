@@ -3,12 +3,15 @@ h1 {
     color: #444444;
     font-family: Lato;
     line-height: 1.5px;
+    font-weight: normal;
 }
 h2{
    color: black;
+   font-weight: normal;
 }
 h3{
    color: black;
+   font-weight: normal;
 
 }
 
@@ -29,6 +32,7 @@ p{
     border-width: 6px; 
     border: solid;
     border-color: white;
+    font-family: Lato;
     
 
 }
@@ -42,10 +46,10 @@ a {
 
 }
 
-.nav:hover {
+a:hover {
     color: black;
 }
-}
+
 
 .link:hover {
     color: aa0000;
@@ -79,6 +83,12 @@ a {
 }
 
 
+.container {
+    width: 1070px; 
+    margin: 0 auto;
+}
+
+
 Links:
     #DD0000
 
@@ -90,9 +100,3 @@ Links hover:
 Navigation links hover:
     black
 
-Date: 
-    #cccccc
-
-
-Copyright
-    #bbbbbb
