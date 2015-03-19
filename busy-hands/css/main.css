@@ -63,12 +63,14 @@ float: right;
 #main 	{
 	color: #333333;
 
+/*  homeboxes*/
+
 #homeboxes {
 	border: 6px;
 	border-color: #E2E2E2;
 } 
 
-homeboxes:hover {
+#homeboxes:hover {
 	border: 6px;
 	border-color:#F9F9F9;
 }
@@ -110,6 +112,15 @@ footer {
 
 color:#515151;
 background-color: black;
+font size: 13px;
+
+}
+
+footer a {
+	color: #1FA2E1;
+	text-decoration: underline;
+}
+
 
 }
 
@@ -141,6 +152,21 @@ width: 210px;
 float: left;
 margin-left: 30px;
 }
+
+
+#copyright {
+
+	float: left;
+}
+
+#tagline {
+float: right;
+
+
+}
+
+
+
 
 Footer Headings
 #CCCCCC
