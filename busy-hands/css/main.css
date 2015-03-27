@@ -1,17 +1,111 @@
+/*
+Project Name: Busy Hands
+Client: Busy Hands
 
-/* structure of site */
+[Table Of Contents] 
+
+	01- GENERAL
+	02- LAYOUT 
+	03- SOCIAL MEDIA  
+	04- MAIN CONTENT
+	05- COLUMNS
+	06- BLURB
+	07- FOOTER
+	08- MISC
+
+*/
+
+
+
+/*----------------------------------------------------------------------------- 
+=01 GENERAL 
+-----------------------------------------------------------------------------*/
+/* Setting-up all our default styles for the site: body, h1-h6, p, a, etc. */
+
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #333333;
+	background-image: url("../images/bg.png");
+	line-height: 1.1;
+}
+
+a  {
+	text-decoration: none;
+	color:#1FA2E1;
+}
+
+
+a:hover  {
+	text-decoration: underline;
+}
+
+p  {
+   margin: 0 0 15px 0;
+
+}
+
+
+h1 {
+	font-size: 54px
+
+}
+
+h2 {
+	font-size: 24px
+
+}
+h3 {
+	font-size: 18px
+
+}
+h4 {
+	font-size: 14px
+
+}
+h5 {
+	font-size: 12px
+
+}
+/*  logo replacement */
+
+#busyhandslogo {
+
+
+	width: 291px; 
+	height: 54px;
+	display: block;
+	background: url("../images/logo.png") no-repeat;
+	background-size: cover;
+	float: left;
+	
+	text-indent: -9999px;
+	overflow: hidden;
+}
+/*----------------------------------------------------------------------------- 
+=02 Stucture of site = Layout
+-----------------------------------------------------------------------------*/
 
 .wrapper {
  	width: 960px;
  	margin: 0 auto;
- 	background-image: url("../images/bg.png");
+
 
 }
+/*----------------------------------------------------------------------------- 
+=02 Navigation
+-----------------------------------------------------------------------------*/
 
-/* navigation */
-nav 	{
+header {
 
 	background-color: black;
+}
+
+
+nav 	{
+
+	
 	overflow: hidden;
 
 }
@@ -19,40 +113,34 @@ nav 	{
 nav a 	{
 
 	color: #CCCCCC;
-	text-decoration: none;
 	padding: 30px 20px;
+	height: 49;
 	display: block;
+	font-size: 18px;
 	float: left;
 
 }
 
 nav a:hover {
 
-	color: #96DDFC;
+    color: #ffffff;
+	text-decoration: none;
+	background-color: #079fde;
 
 	}
 
-/*  logo replacement*/
-
-#busyhandslogo {
 
 
-	width: 450px; 
-	height: 75px;
-	background: url("../images/logo.png");
-	background-size: cover;
-	text-indent: -9999px;
-	overflow: hidden;
-}
 
 /*  social media*/
 
-#socialmedia {
+.socialmedia {
 
 	display: block;
 	float: right;
 	width: 250px;
 	padding: 20px;
+	overflow: hidden;
 }
 
 #blurb {
@@ -60,14 +148,14 @@ float: right;
 
 }
 
-#main 	{
-	color: #333333;
+
 
 /*  homeboxes*/
 
 #homeboxes {
 	border: 6px;
 	border-color: #E2E2E2;
+	overflow: hidden;
 } 
 
 #homeboxes:hover {
@@ -157,10 +245,12 @@ margin-left: 30px;
 #copyright {
 
 	float: left;
+	width: 290px;
 }
 
 #tagline {
 float: right;
+width: 290px;
 
 
 }
@@ -168,62 +258,12 @@ float: right;
 
 
 
-Footer Headings
-#CCCCCC
+/* 
 
-Footer Text (already inherited from body)
-#333333
-
-Anchors
-#1FA2E1
-
-Anchor Hover
-underline
-
-Home Box Borders
-6px thick
-#E2E2E2
-
-Home Box Border Hover
-6px thick
-#F9F9F9
+1) Have 2 font family? Why? How does the website decide which one to use?
+2) h1 has a  height of 54px. Is this the same as saying its font size is 54px?
 
 
 
-Home Boxes:
-290px with 40px margin
 
-Footer Columns:
-210px, 400px, 210px
-30px margins
-
-Footer Text:
-#515151
-13px
-
-Some Possible Elements, IDs and Classes You Might Use
------------------------------------------------------
-
-<header> 
-<nav>
-
-#main
-
-#social-media 
-
-#blurb 
-
-#home-boxes 
-.home-box
-.home-box
-.home-box
-
-<footer> 
-.box-footer
-.box-footer .middle-widget
-.box-footer 
-
-#copyright 
-#companybottom
-
-
+*/
