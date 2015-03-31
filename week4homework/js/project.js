@@ -7,7 +7,7 @@ function colorChanger()
 
 		var colorText="rgb("+red+", "+green+", "+blue+")";
 		
-		document.getElementById("colorfultext").style.backgroundColor=colorText;
+		document.body.style.backgroundColor=colorText;
 		document.getElementById("colorfultext").innerHTML=colorText;
 		
 
