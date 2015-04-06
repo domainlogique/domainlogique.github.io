@@ -1,14 +1,9 @@
-
 //number buttons = a10, a20, a30 n10, n20, n30
 //color buttons = red & blue
 
 //first build functions for changing numerical value of center buttons when click on numbers
 
 var total = 0;
-var red;
-var blue;
-
-
 
 document.getElementById("a10").onclick = clickTen;
 
@@ -76,8 +71,7 @@ document.getElementById("red").onclick = clickRed;
 
 function clickRed ()  {
 
-red = document.getElementById("red").value;
-document.getElementById("out").style.backgroundColor = red;
+	document.getElementById("out").style.backgroundColor = "red";
 
 }
 
@@ -85,9 +79,7 @@ document.getElementById("blue").onclick = clickBlue;
 
 function clickBlue () {
 
-blue = document.getElementById("blue").value;
-
-document.getElementById("out").style.backgroundColor = blue;
+	document.getElementById("out").style.backgroundColor = "blue";
 
 }
 
@@ -96,7 +88,6 @@ document.getElementById("out").onclick = resetColorWhite
 
 function resetColorWhite() {
 
-document.getElementById("out").style.backgroundColor = white
-
+	document.getElementById("out").style.backgroundColor = "white"
 
 }
