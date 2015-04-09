@@ -6,12 +6,12 @@ Client: Busy Hands
 
 	01- GENERAL
 	02- LAYOUT 
-	03- SOCIAL MEDIA  
-	04- MAIN CONTENT
-	05- COLUMNS
-	06- BLURB
+	03- NAVIGATION  
+	04- SOCIAL MEDIA
+	05- BLURB
+	06- HOME BOXES
 	07- FOOTER
-	08- MISC
+	08- ENDMATTER
 
 */
 
@@ -25,7 +25,7 @@ Client: Busy Hands
 
 body {
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 16px;
+	font-size: 12px;
 	color: #333333;
 	background-image: url("../images/bg.png");
 	line-height: 1.1;
@@ -61,10 +61,16 @@ h3 {
 
 }
 h4 {
-	font-size: 14px
+	font-size: 16px
 
 }
 h5 {
+	font-size: 14px
+
+}
+
+
+h6 {
 	font-size: 12px
 
 }
@@ -94,7 +100,7 @@ h5 {
 
 }
 /*----------------------------------------------------------------------------- 
-=02 Navigation
+=03 Navigation
 -----------------------------------------------------------------------------*/
 
 header {
@@ -113,10 +119,10 @@ nav 	{
 nav a 	{
 
 	color: #CCCCCC;
-	padding: 30px 20px;
-	height: 49;
+	padding: 36px 18px 0px 18px;
+	height: 49px;
 	display: block;
-	font-size: 18px;
+	font-size: 17px;
 	float: left;
 
 }
@@ -132,7 +138,9 @@ nav a:hover {
 
 
 
-/*  social media*/
+/*----------------------------------------------------------------------------- 
+=04 Social Media
+-----------------------------------------------------------------------------/*  social media*/
 
 .socialmedia {
 
@@ -143,64 +151,125 @@ nav a:hover {
 	overflow: hidden;
 }
 
+
+/*----------------------------------------------------------------------------- 
+=05 Blurb
+-----------------------------------------------------------------------------*/
+
+#blurb p {
+	
+	margin: 0;
+	font-size: 18px;
+
+}
+
+
+#blurb img {
+	float: right;
+	border: none;
+	margin-top: 5px;
+
+}
+
 #blurb {
-float: right;
+	border-color: #BDBDBD #FFFFFF #FFFFFF #BDBDBD; /* adds a fake "beveled" grey on top/left, white on bottom/right */
+	border-style: solid;
+	border-width: 1px;
+
+	
+	margin-bottom: 25px;
+	padding: 15px 20px 25px;
 
 }
 
 
 
-/*  homeboxes*/
+
+
+/*----------------------------------------------------------------------------- 
+=06 Homeboxes
+-----------------------------------------------------------------------------*/
+
 
 #homeboxes {
-	border: 6px;
-	border-color: #E2E2E2;
+	
 	overflow: hidden;
 } 
 
-#homeboxes:hover {
-	border: 6px;
+
+#homeboxes img:hover{
+
 	border-color:#F9F9F9;
 }
 	
 }
 .homebox1 {
-width: 290px;
-float: left;
-margin-right: 40px;
+	
+	width: 290px;
+	float: left;
+	margin-right: 40px;
 
+}
+
+.homebox1 img {
+
+	border: 6px solid;
+	border-color: #E2E2E2;
+	display: block;
+	margin-bottom: 20px;
 }
 
 .homebox2 {
-width: 290px;
-float: left;
-margin-right: 40px;
+	
+	width: 290px;
+	float: left;
+	margin-right: 40px;
 
 }
+
+
+.homebox2 img {
+
+	border: 6px solid;
+	border-color: #E2E2E2;
+	display: block;
+	margin-bottom: 20px;
+}
+
 .homebox3 {
-width: 290px;
-float: left;
-margin-left: 0px;
+		
+	width: 290px;
+	float: left;
+	margin-left: 0px;
 
 }
 
-span {
 
-color: #96DDFC;
+.homebox3 img {
 
+	border: 6px solid;
+	border-color: #E2E2E2;
+	display: block;
+	margin-bottom: 20px;
 }
+
 
 .clear { 
 
-clear: both;
+	clear: both;
 
 }
 
+
+-/*---------------------------------------------------------------------------- 
+=06 Footer
+-----------------------------------------------------------------------------*/
+
 footer {
 
-color:#515151;
+
 background-color: black;
-font size: 13px;
+
 
 }
 
@@ -208,7 +277,13 @@ footer a {
 	color: #1FA2E1;
 	text-decoration: underline;
 }
+footer .wrapper {
+	 width: 960px;
+	 margin: 0 auto;
+	 padding: 20px 0 35px;
+	 overflow: hidden;
 
+}
 
 }
 
@@ -216,13 +291,21 @@ h3 {
 	color: #CCCCCC;
 }
 
-.boxfooter1 {
+footer .wrapper.boxfooter1 {
 
 width: 210px;
 float: left;
 margin-right: 30px;
 
 
+}
+
+.boxfooter1 ul li a {
+
+	text-decoration: none;
+	color:#515151;
+	font-size: 13px;
+	font-style: normal;
 }
 
 .boxfooter2 {
@@ -238,10 +321,13 @@ margin-right: 30px;
 
 width: 210px;
 float: left;
-margin-left: 30px;
+margin-right: 30px;
+
+
 }
-
-
+/*----------------------------------------------------------------------------- 
+=08 ENDMATTER
+-----------------------------------------------------------------------------*/
 #copyright {
 
 	float: left;
@@ -262,7 +348,9 @@ width: 290px;
 
 1) Have 2 font family? Why? How does the website decide which one to use?
 2) h1 has a  height of 54px. Is this the same as saying its font size is 54px?
-
+3) for the blurb placed font-saice in p tag para
+4) if you only have 3pxs define which parts of the rectangle are defined? See blurb.
+5 why overflow hidden when have a div clear in HTML for footer
 
 
 
