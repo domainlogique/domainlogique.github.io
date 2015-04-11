@@ -51,7 +51,7 @@ a:hover {
 
 p { 
 
-margin: 0 0 15px 0;
+margin: 25px 0 25px 0;
 
 }
 
@@ -203,11 +203,27 @@ margin: 25px 0px;
 
 }
 
-#profile-boxes .right{
+#profile-boxes .right{ /* flushes profile to the right*/
 
 	
 	margin-right: 0px;
 
+}
+
+#profile-boxes .profile-box h3 {
+
+	padding: 10px 0 15px 0;
+}
+
+#profile-boxes .profile-box img {
+
+	border: 6px solid #E2E2E2;
+	display: block;
+	margin-bottom: 20px;
+}
+
+#profile-boxes .profile-box img:hover {
+	border-color: #F9F9F9;
 }
 
 /*----------------------------------------------------------------------------- 
@@ -229,23 +245,55 @@ footer .content-center {
 	margin: 0 auto;
 	padding: 20px 0 35px;
 
-
 }
 
 footer .center-content .box-footer {
 
 	float: left;
-	width: 210px;
+	width: 300px;
 	padding-right: 30px;
 	margin-bottom: 40px;
 
 }
 
 footer  .center-content .middle {
-	width: 400px;
+	width: 260px;
 }
 
+footer .center-content h2 {
+	
+	border-bottom: 1px solid white;
+	color: black;
+	margin-bottom: 2px;
+	padding:7px 0 12px ;
 
+}
+
+footer .center-content .box-footer ul li {
+
+	padding: 7px 0;
+	border-bottom: 1px solid white;
+	color: white;
+	font-size: 25px;
+	font-style: italic;
+
+}
+
+footer .center-content .box-footer ul li a:hover {
+
+	text-decoration: none;
+	color: black;
+	font-size: 13px;
+	font-style: normal;
+
+}
+
+footer .center-content .middle img {
+
+	margin-top: 10px;
+	display: block;
+	padding: 10px;
+}
 
 
 
