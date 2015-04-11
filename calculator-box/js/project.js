@@ -7,60 +7,46 @@ var total = 0;
 
 document.getElementById("a10").onclick = clickTen;
 
-function clickTen() {
-
-	total = total +10;
-	document.getElementById("out").innerHTML = total;
+	function clickTen() {
+		total = total +10;
+		document.getElementById("out").innerHTML = total;
 }
 
 document.getElementById("a20").onclick = clickTwenty;
 
-function clickTwenty() {
-
-total = total + 20;
-
-document.getElementById("out").innerHTML = total;
-
+	function clickTwenty() {
+		total = total + 20;
+		document.getElementById("out").innerHTML = total;
 }
 
 document.getElementById("a30").onclick = clickThirty;
 
-function clickThirty() {
-
-total = total + 30;
-
-document.getElementById("out").innerHTML = total;
-
+	function clickThirty() {
+		total = total + 30;
+		document.getElementById("out").innerHTML = total;
 }
 
 document.getElementById("n10").onclick = clickNTen;
 
-function clickNTen () {
-
-total = total - 10;
-
-document.getElementById("out").innerHTML = total;
-
+	function clickNTen () {
+		total = total - 10;
+		document.getElementById("out").innerHTML = total;
 
 }
 
 document.getElementById("n20").onclick = clickNTwenty;
 
-function clickNTwenty () {
- 
-  total = total - 20;
-
-  document.getElementById("out").innerHTML = total;
+	function clickNTwenty () { 
+	  total = total - 20;
+	  document.getElementById("out").innerHTML = total;
 
 }
 
 document.getElementById("n30").onclick = clickNThirty;
 
-function clickNThirty () {
-
-total = total - 30;
-
-document.getElementById("out").innerHTML = total;
+	function clickNThirty () {
+		total = total - 30;
+		document.getElementById("out").innerHTML = total;
 
 }
 
@@ -69,25 +55,25 @@ document.getElementById("out").innerHTML = total;
 
 document.getElementById("red").onclick = clickRed;
 
-function clickRed ()  {
+	function clickRed ()  {
 
-	document.getElementById("out").style.backgroundColor = "red";
+		document.getElementById("out").style.backgroundColor = "red";
 
 }
 
 document.getElementById("blue").onclick = clickBlue;
 
-function clickBlue () {
+	function clickBlue () {
 
-	document.getElementById("out").style.backgroundColor = "blue";
+		document.getElementById("out").style.backgroundColor = "blue";
 
 }
 
 
 document.getElementById("out").onclick = resetColorWhite
 
-function resetColorWhite() {
+	function resetColorWhite() {
 
-	document.getElementById("out").style.backgroundColor = "white"
+		document.getElementById("out").style.backgroundColor = "white"
 
 }
