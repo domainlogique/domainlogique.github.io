@@ -1,102 +1,55 @@
-//Started in Javascript to outline the logic 
+// User enters a number in the form field, hits enter or clicks on Submit button.
+// That number of paragraphs of the specified Ipsum are displayed, animating in with a slideDown or fadeIn animation.
+// .slideDown()
+// .fadeIn()
+
+// When the user clicks back into the field, the paragraphs are hidden - .hide() - , using fadeOut or slideUp.
 
 
-var subNumber=0 // starting point
-var paragraph //paragraph
+$(document).ready(function(){
+
+	// FIRST PART
+	// 1: User clicks '#submit' button, which triggers the function
+	// 2: Grab the user's input from '#paragraphs'
+	// 3: Show corresponding number of paragraphs
 
 
-document.getElementById("submit").onchange = generateText; //CTA is when submit value is changed then some text is generated
+	// 1
+	$("#submit").click(function(){
+		
+		// 2
+		var userInput = $("#paragraphs").val();
 
-	function generateText () {
+		// 3
+		// 3a - .slideDown()/.fadeIn() <div class='.ipsum'>
+		// 3b - .show() the number of paragraphs equal userInput; so, if userInput = 2, .show() the first two paragraphs
 
-		subNumber = document.getElementById("submit").value //how do we get subNumber? By scraping out whatever VALUE is inputed in the submit box
+		// 3a
+		$(".ipsum").slideDown("fast");
 
-		if (isNaN(subNumber)) { // this code is to ensure that users plug in a number as it is not clear that is what they should do
-			alert("Please enter a number");
-		}
+		// 3b
+		$(".ipsum p")
 
-		//OK here is where the conditions are defined; used the modulo (remainder) method; however wasn't sure what to do if someone 
-		//plugged in the number 30  etc.... b/c then the hipster, beer, and bacon paras would be able to download; but since pages are linked separately
-		//won't worry abut that right now
-
-		else if (subNumber % 2 == 0) { 
-			paragraph = document.getElementById("hipster").innerHTML;
-		}
-		else if (subNumber % 3 == 0) {
-
-			paragraph = document.getElementById("beer").innerHTML;
-		}
-		else if(subNumber % 5 ==0){
-			paragraph = document.getElementById("bacon").innerHTML;
-		}
-		else if(subNumber % 7 ==0)){
-			paragraph = document.getElementById("lorem").innerHTML;
-	}
-
-		//finally assume because the id's are distinctly defined in the html pages attached and since jscript code has been linked to each html page that the
-		//hipster, beer, bacon, and lorem paras will load when called. No fade ins etc. done at this point save that for jsquery.
-
-	//JSQUERY ATTEMPT
-
-
-	$(document).ready(function(){
-		$("submit").onchange(function(){
-			var subNumber = $(this).value("body id"); //don't know how to call id associated with body tag
-			var count = 0;
-
-			if(subNumber % 2 == 0){
-				$("#hipster").onchange(function(){
-					$("#hipster").fadeIn("fast", 1);
-			
-			}
-				$("#hipster").mouseleave(function(){
-					("#hipster").fadeTo("slow", 0);
-				}
-
-			else if(subNumber % 3 == 0){
-				$("#beer").onchange(function(){
-					$("#beer").fadeIn("fast", 1);
-			
-			}
-				$("#beer").mouseleave(function(){
-					("#beer").fadeTo("slow", 0);
-				}
-
-			else if(subNumber % 5 == 0){
-				$("#bacon").onchange(function(){
-					$("#bacon").fadeIn("fast", 1);
-			
-			}
-				$("#bacon").mouseleave(function(){
-					("#bacon").fadeTo("slow", 0);
-
-			}
-			else if(subNumber % 7 == 0){
-				$("#lorem").onchange(function(){
-					$("#lorem").fadeIn("fast", 1);
-			
-			}
-				$("#lorem").mouseleave(function(){
-					("#lorem").fadeTo("slow", 0)
-
-			
-
+			.slice(0, userInput)
+			.show();
 	});
 
 
+	// SECOND PART
+	// 1. User click on input box 
+	// 2. Input box clears
+	// 3. Slide up .ipsum
+	// 4. Hide paragraphs inside of .ispum
+
+	// .focus()
+	$('#paragraphs').focus(function(){
+		
+		$(".ipsum").slideUp("fast");
+		$(".ipsum p").hide();
 
 
+	});
 
+	
+});
 
-
-
-
-
-
-
-
-
-
-
-
-}
