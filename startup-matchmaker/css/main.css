@@ -1,0 +1,260 @@
+/*
+Project Name: Start-up: MatchMaker;
+Client: MM
+
+[Table Of Contents] 
+
+	01- GENERAL LAYOUT
+	02- NAVIGATION
+	03- TAGLINE
+	04- BANNER
+	05- BLURB
+	06- CALLOUT BOXES
+	07- FOOTERT
+	
+
+*/
+
+/*----------------------------------------------------------------------------- 
+=01 GENERAL LAYOUT
+-----------------------------------------------------------------------------*/
+
+body {
+
+	font-family: sans pro;
+	font-size: 15px;
+
+}
+
+.center-content{
+	margin:0px auto;
+	width: 100%;
+}
+
+h1 {
+	font-size: 28px;
+}
+
+h2 {
+	font-size: 25px;
+}
+h3 {
+	font-size: 20px;
+}
+/*----------------------------------------------------------------------------- 
+=02 NAVIGATION
+-----------------------------------------------------------------------------*/
+
+#page-header {
+	display: block;
+	width: 100%;
+	height: 5em;/* 75px vs 15 body font*/
+	background-color: black;
+	
+
+}
+
+header h1 a {
+
+	font-family: merriweather;
+	color: yellow;
+	text-decoration: none;
+	margin: .9em; /* 25px vs, 28 h1*/
+	padding: .4em;/* 10px vs, 28 h1*/
+
+
+	
+}
+
+header nav span {
+
+	font-family: oswald;
+	color: white;
+	text-decoration: none;
+}
+
+
+header nav {
+	
+	display: block;
+	width: 100%;
+	text-align: right;
+	font-size: 20px;
+	padding:1em; /* 20px vs. 20 fs*/
+	margin-bottom: 1.25em; /* 25px vs. 20 fs*/
+	font-size: 1em; /* 20px vs. 20 fs*/
+	margin-right: 1em;
+	
+
+}
+
+nav a {
+
+	color: white;
+	text-decoration: none;
+
+}
+
+/*----------------------------------------------------------------------------- 
+=03 TAGLINE
+-----------------------------------------------------------------------------*/
+
+.tagline {
+	 overflow: hidden;
+	 display: block;
+	 margin: 1em; /* 25px vs. 25 fs*/
+	 text-align: center;
+	 font-style: italic;
+	 font-size: 25px;
+	}
+
+ .tagline #taste {
+
+	text-decoration: strike out;
+
+}
+
+ .tagline span #are {
+
+	text-decoration: line yellow;	
+}
+
+/*----------------------------------------------------------------------------- 
+=04 BANNER
+-----------------------------------------------------------------------------*/
+
+ .banner {
+ 	background: url("../images/coworking.jpg");
+ 	overflow: hidden;
+ 	/*height: 500px;*/
+}
+
+/*----------------------------------------------------------------------------- 
+=05 BLURB
+-----------------------------------------------------------------------------*/
+
+.blurb {
+	
+	
+	float: right;
+	width: 40%;
+	height: 10em; /* 150px vs. 15 fs*/
+	background-color: white;
+	display: block;
+	text-align: center;
+	font-weight: bold;
+	margin: 8.2em 2em 8.3em;/* 125 - 30 125px vs. 15 fs*/
+	margin-right: 2em; /* 30px vs. 15 fs*/
+	padding: 2em .67em .67em .67em;/* 30 -10-10-10px vs. 15 fs*/
+
+}
+
+.blurb h2 {
+
+	font-weight: bold;
+
+}
+
+.button {
+
+	float: right;
+	display: block;
+	background-color: yellow;
+	width: 100%;
+	text-align: center;
+	height: 1.5em;/* 150px vs. 20 fs*/
+	line-height: 1.5em;
+	text-decoration: none;
+	font-color: black;
+	font-size: 1em;/* 20px vs. 20 fs*/
+	margin: .5em 0em;/* 10px vs. 20fs*/
+}
+
+/*----------------------------------------------------------------------------- 
+=06 CALLOUT BOXES
+-----------------------------------------------------------------------------*/
+
+.callouts {
+
+	overflow: hidden;
+	display: block;
+}
+
+
+.callouts .callout {
+
+	float: left;
+	width: 30%;
+	margin-right: 2.67em;/* 40px vs. 15fs*/
+}
+
+.callouts .right {
+
+	margin-right: 0px;
+}
+
+.callouts .callout h3 {
+
+	padding: .5em 0 .75em 0;/* 10px - 15px vs. 20fs*/
+	font-weight: bold;
+}
+
+.callouts .callout .button {
+
+	display: block;
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
+	background-color:grey;
+	width: 90%;
+	padding: .67em;/* 10px vs. 15fs*/
+	border: .67em;/* 10px vs. 15fs*/
+	text-align: center;
+	margin: 1.67em;/* 25px vs. 15fs*/
+
+
+}
+
+/*----------------------------------------------------------------------------- 
+=07 FOOTER
+-----------------------------------------------------------------------------*/
+
+footer {
+
+	overflow: hidden;
+	background: black;
+	display: block;
+	color: white;
+	height: 2.67em;/* 40px vs. 15fs*/
+	padding-top: 2em;/* 30px vs. 15fs*/
+	padding-left: 1.67px;/* 25px vs. 15fs*/
+}
+
+@media only screen and (min-width: 1350px) {
+	#container {
+		width: 1080px;
+	}
+}
+
+@media only screen and (max-width: 960px) {
+	body {
+		font-size: 15px;
+	
+}
+
+@media only screen and (max-width: 800px) {
+	body {
+		font-size: 17px;
+	}
+
+	.callouts .callout {
+
+	width: 50%;
+	margin-right: 3em;/* 40px vs. 15fs*/
+	}
+
+
+	.callouts .right {
+		float: none;
+	}
+}
