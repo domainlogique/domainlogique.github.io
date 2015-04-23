@@ -48,8 +48,10 @@ h3 {
 #page-header {
 	display: block;
 	width: 100%;
-	height: 5em;/* 75px vs 15 body font*/
+	/*height: 5em; 75px vs 15 body font*/
 	background-color: black;
+	border-bottom:.33em solid yellow;/* 5px vs 15 body font*/
+	padding: 1.33em; /* 20px vs 15 body font*/
 	
 
 }
