@@ -11,22 +11,33 @@
 <body>
 	<header id="page-header">
 		<div class="center-content">
-			<h1><a href="index.html">Startup Matchmaker</a></h1>
+			<h1>
+				<a href="index.html">Startup Matchmaker</a>
+			</h1>
 
 			<nav>
-				<strong><a href="developers.html"><span>Developers</span></a></strong>
-				<strong><a href="designers.html"><span>Designers</span></a></strong>		
-				<a href="how.html">How it Works</a>			
-				<a href="team.html">Our Team</a>			
-				<a href="blog.html">Blog</a>		
+				<div id="innernav">
+					<strong><a href="developers.html"><span>Developers</span></a></strong>
+					<strong><a href="designers.html"><span>Designers</span></a></strong>
+							
+					<a href="how.html">How it Works</a>			
+					<a href="team.html">Our Team</a>			
+					<a href="blog.html">Blog</a>
+				</div>	
+
+				<a id="hamburger" href="#">|||</a>
 			</nav>
 		</div>
 	</header>
 
-	<div class="center-content">
-		<p class="tagline">Because two brains <span id="taste">taste</span> <span id="are">are</span> better than one.</p>
+	<section id="tagline-wrapper">
+		<p class="tagline center-content">
+			Because two brains <span id="taste">taste</span> <span id="are">are</span> better than one.
+		</p>
+	</section>
 
-		<section class="banner">
+	<section class="banner">
+		<div class="center-content">
 			<div class="blurb">
 				<h2>Meet your Match!</h2>
 
@@ -34,9 +45,11 @@
 
 				<a class="button" href="#">Create a Profile</a>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<section class="callouts">
+	<section class="callouts">
+		<div class="center-content">
 			<section class="callout">
 				<header>
 					<h3>Create a Profile</h3>
@@ -66,14 +79,15 @@
 
 				<a class="button" href="designers.html">Start Your Search</a>
 			</section>
-		</section>
-	</div><!--body center content-->
+		</div>
+	</section>
+
 	<footer>
 		<div class="center-content">
-		<div class="wrapper">
-			&copy; 2013 Startup Matchmaker. Made in NY.
-		</div>
-	</div><!--footer center content-->
+			<div class="wrapper">
+				&copy; 2013 Startup Matchmaker. Made in NY.
+			</div>
+		</div><!--footer center content-->
 	</footer>
 </body>
 </html>

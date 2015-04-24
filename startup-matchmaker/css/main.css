@@ -5,7 +5,8 @@ Client: MM
 [Table Of Contents] 
 
 	01- GENERAL LAYOUT
-	02- NAVIGATION
+	02A- NAVIGATION
+	02B- NAVIGATION HAMBURGER
 	03- TAGLINE
 	04- BANNER
 	05- BLURB
@@ -28,7 +29,7 @@ body {
 
 .center-content{
 	margin:0px auto;
-	width: 100%;
+	width: 90%;
 }
 
 h1 {
@@ -42,7 +43,7 @@ h3 {
 	font-size: 20px;
 }
 /*----------------------------------------------------------------------------- 
-=02 NAVIGATION
+=02A  NAVIGATION
 -----------------------------------------------------------------------------*/
 
 #page-header {
@@ -51,74 +52,80 @@ h3 {
 	/*height: 5em; 75px vs 15 body font*/
 	background-color: black;
 	border-bottom:.33em solid yellow;/* 5px vs 15 body font*/
-	padding: 1.33em; /* 20px vs 15 body font*/
-	
+}
 
+header .center-content {
+	overflow: hidden;
+	padding: 15px 0;
+}
+
+header h1 {
+	float: left;
 }
 
 header h1 a {
-
 	font-family: merriweather;
 	color: yellow;
 	text-decoration: none;
-	margin: .9em; /* 25px vs, 28 h1*/
-	padding: .4em;/* 10px vs, 28 h1*/
-
-
-	
+	/*margin: .9em;  25px vs, 28 h1*/
+	/*padding: .4em; 10px vs, 28 h1*/
 }
 
 header nav span {
-
 	font-family: oswald;
 	color: white;
 	text-decoration: none;
 }
 
 
-header nav {
-	
-	display: block;
-	width: 100%;
-	text-align: right;
+header nav {	
 	font-size: 20px;
-	padding:1em; /* 20px vs. 20 fs*/
-	margin-bottom: 1.25em; /* 25px vs. 20 fs*/
+	/*padding:1em;  20px vs. 20 fs*/
+	/*margin-bottom: 1.25em; 25px vs. 20 fs*/
 	font-size: 1em; /* 20px vs. 20 fs*/
-	margin-right: 1em;
-	
-
+	float: right;
+	margin-top: 8px;
 }
 
 nav a {
-
+	margin-right: 15px;
 	color: white;
 	text-decoration: none;
 
 }
 
 /*----------------------------------------------------------------------------- 
+=02B  NAVIGATION HAMBURGER
+-----------------------------------------------------------------------------*/
+
+#hamburger {
+	font-size: 2em;
+	display: none;
+	background-color: black;
+	color: white;
+}
+
+/*----------------------------------------------------------------------------- 
 =03 TAGLINE
 -----------------------------------------------------------------------------*/
 
-.tagline {
-	 overflow: hidden;
-	 display: block;
-	 margin: 1em; /* 25px vs. 25 fs*/
-	 text-align: center;
-	 font-style: italic;
-	 font-size: 25px;
-	}
-
- .tagline #taste {
-
-	text-decoration: strike out;
-
+#tagline-wrapper {
+	background: rgb(222,222,222);
 }
 
- .tagline span #are {
+.tagline {
+	text-align: center;
+	font-style: italic;
+	font-size: 25px;
+	padding: 15px;
+}
 
-	text-decoration: line yellow;	
+.tagline #taste {
+	text-decoration: line-through;
+}
+
+.tagline #are {
+	border-bottom: 2px solid yellow;
 }
 
 /*----------------------------------------------------------------------------- 
@@ -127,6 +134,8 @@ nav a {
 
  .banner {
  	background: url("../images/coworking.jpg");
+ 	background-size: cover;
+
  	overflow: hidden;
  	/*height: 500px;*/
 }
@@ -177,11 +186,12 @@ nav a {
 -----------------------------------------------------------------------------*/
 
 .callouts {
-
-	overflow: hidden;
 	display: block;
 }
 
+.callouts .center-content {
+	overflow: hidden;
+}
 
 .callouts .callout {
 
@@ -191,7 +201,6 @@ nav a {
 }
 
 .callouts .right {
-
 	margin-right: 0px;
 }
 
@@ -244,19 +253,24 @@ footer {
 	
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 630px) {
 	body {
-		font-size: 17px;
+		font-size: 13px;
 	}
 
 	.callouts .callout {
-
-	width: 50%;
-	margin-right: 3em;/* 40px vs. 15fs*/
+		/*margin-right: 3em; 40px vs. 15fs*/
 	}
-
 
 	.callouts .right {
 		float: none;
+	}
+
+	#hamburger {
+		display: block;
+	}
+
+	#innernav {
+		display: none;
 	}
 }
