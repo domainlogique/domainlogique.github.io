@@ -11,7 +11,8 @@ Client: MM
 	04- BANNER
 	05- BLURB
 	06- CALLOUT BOXES
-	07- FOOTERT
+	07- FOOTER
+	08- MEDIA QUERIES
 	
 
 */
@@ -240,6 +241,11 @@ footer {
 	padding-top: 2em;/* 30px vs. 15fs*/
 	padding-left: 1.67px;/* 25px vs. 15fs*/
 }
+
+
+/*----------------------------------------------------------------------------- 
+=08 MEDIA QUERIES
+-----------------------------------------------------------------------------*/
 
 @media only screen and (min-width: 1350px) {
 	#container {
