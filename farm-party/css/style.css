@@ -43,7 +43,7 @@ h1 {
 #rooster{
 	position: absolute;
 	top: 20%;
-	right:45%;
+	right:70%;
 	display: none;
 }
 
@@ -57,7 +57,7 @@ h1 {
 #sun{
 	position: absolute;
 	top: 5%;
-	right: 5%;
-	display: none;
+	left: 5%;
+	
 
 
