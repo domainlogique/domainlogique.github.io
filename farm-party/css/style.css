@@ -36,7 +36,7 @@ h1 {
 	position: absolute;
 	bottom: 0%;
 	left: 20%;
-	/*display: none;*/
+	display: none;
 }
 
 
@@ -44,20 +44,20 @@ h1 {
 	position: absolute;
 	top: 20%;
 	right:45%;
-	/*display: none;*/
+	display: none;
 }
 
 #varken{
 	position: absolute;
 	bottom: 0%;
 	right: 25%;
-	/*display: none;*/
+	display: none;
 }
 
 #sun{
 	position: absolute;
 	top: 5%;
 	right: 5%;
-	/*display: none;*/
+	display: none;
 
 

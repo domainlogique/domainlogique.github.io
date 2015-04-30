@@ -19,7 +19,7 @@
 //you want to generate new characters with a button? Have fun! After all, it's a party! ;)project.js
 
 
-$(document).ready(function({
+$(document).ready(function(){
 
 
 $("#rooster").show().delay(1000).animate({
@@ -27,11 +27,11 @@ $("#rooster").show().delay(1000).animate({
 },1000);
 
 $("#varken").show().delay(3000).animate({
-    right: "70%"
+    right: "20%"
 },1000);
 
 $("#cow1").show().delay(5000).animate({
-    top: "70%"
+    top: "50%"
 },1000);
 
-}))
+})
