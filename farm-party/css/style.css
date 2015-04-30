@@ -1,0 +1,63 @@
+
+body {
+	background: url("../images/cloud_2.gif");
+	
+}
+
+/*body, html, #wrapper {
+	overflow: hidden;
+}
+*/
+#ground-grass{
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	background-color: green;
+	height: 30px
+}
+
+
+
+
+h1 {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	margin-top: -50px;
+	text-align: center;
+	line-height: 100px;
+	font-size: 100px;
+	color: blue;
+	font-family: 'Sue Ellen Francisco';	
+	z-index: -1;
+}
+
+#cow1{
+	position: absolute;
+	bottom: 0%;
+	left: 20%;
+	/*display: none;*/
+}
+
+
+#rooster{
+	position: absolute;
+	top: 20%;
+	right:45%;
+	/*display: none;*/
+}
+
+#varken{
+	position: absolute;
+	bottom: 0%;
+	right: 25%;
+	/*display: none;*/
+}
+
+#sun{
+	position: absolute;
+	top: 5%;
+	right: 5%;
+	/*display: none;*/
+
+

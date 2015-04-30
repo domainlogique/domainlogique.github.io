@@ -1,6 +1,6 @@
 $(document).ready(function(){
-	$("hamburger").click(function(){
-	$("innernav").slideToggle(500);
+	$("#hamburger").click(function(){
+	$("#innernav").slideToggle(500);
 	});
 });
 
