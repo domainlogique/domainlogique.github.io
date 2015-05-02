@@ -21,17 +21,48 @@
 
 $(document).ready(function(){
 
+	// 1. NESTED CALLBACKS
+	// $("#rooster").show().delay(1000).animate({
+	//     left: "70%"
+	// }, 5000, function() {
+	// 	$("#varken").show().delay(3000).animate({
+	//     	right: "20%"
+	// 	},1000, function() {
+	// 		$("#cow1").show().delay(5000).animate({
+	//     		top: "50%"
+	// 		},1000);
+	// 	});
+	// });
 
-$("#rooster").show().delay(1000).animate({
-    left: "70%"
-},1000);
+	// 2 .TIMERS
+	// setTimeout(function(){
+	// 	$("#varken").show().delay(3000).animate({
+	//     	right: "20%"
+	// 	},1000);		
+	// }, 2000)
 
-$("#varken").show().delay(3000).animate({
-    right: "20%"
-},1000);
 
-$("#cow1").show().delay(5000).animate({
-    top: "50%"
-},1000);
+	$("#rooster").show().delay(1000).animate({
+		left: "70%"
+	}, 1000, showVarken)
 
-})
+	function showVarken() {
+		$("#varken").show().delay(3000).animate({
+	    	right: "20%"
+		}, 1000, cow1);
+	}
+
+	function cow1() {
+		$("#cow1").show().delay(5000).animate({
+			top:"50%"
+		},1000);
+	}
+
+	// $("#varken").show().delay(3000).animate({
+	//     right: "20%"
+	// },1000);
+
+	// $("#cow1").show().delay(5000).animate({
+	//     top: "50%"
+	// },1000);
+});
