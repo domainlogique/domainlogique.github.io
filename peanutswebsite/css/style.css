@@ -12,7 +12,7 @@ Client: Lucy Van Pelt
 	06- BLURB
 	07- PROFILE BOXES
 	08- FOOTER
-	09- MISC
+	09- LIGHT BOXES
 
 */
 
@@ -134,20 +134,25 @@ color: #ffffff;
 
 /* Logo with image replacement for the text */
 
-h2 a {
+#logo h1{
+	float: left;
+	margin: 20px; 
+
+}
+
+#logo h2 {
 
 	float: left;
+	margin: 10px;
 	
 	
 }
 
 
-#socialmedia {
-
+#socialMedia {
 float: right;
-/*display: block;
-width: 200px;
-margin: 25px 0px;*/
+margin: 10px;
+padding: 30px;
 
 }
 
@@ -160,6 +165,7 @@ margin: 25px 0px;*/
 	display: block;
 	clear: both;
 	margin: 30px;
+	padding:10px;
 	width: 100%;
 	height: auto;
 }
@@ -289,6 +295,28 @@ footer .center-content .middle img {
 	display: block;
 	padding: 10px;
 }
+/*----------------------------------------------------------------------------- 
+=08 PEANUT GALLERY - LIGHT BOXES THROUGH FANCY BOX
+-----------------------------------------------------------------------------*/
 
+#wrapper {
+	width: 1025px;
+	margin: 30px auto;
+}
 
+.row img {
+	display: block;
+	float: left;
+	margin: 0 4px 4px 0;
+}
 
+.row a:hover {
+	opacity: .8;
+}
+
+/*Styling the Fancy Box*/
+.fancybox-close {
+	background-image: none;
+	background-color: green;
+	border-radius: 50%;
+}
