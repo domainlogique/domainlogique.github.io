@@ -8,12 +8,20 @@ Client: Lucy Van Pelt
 	02- LAYOUT 
 	03- NAVIGATION  
 	04- LOGO & SOCIAL MEDIA
-	05- HOME BANNER
-	06- BLURB
-	07- PROFILE BOXES
-	08- GALLERY
-	09- FOOTER
-	
+	05- MUSIC
+	06- HOME BANNER
+	07- BLURB
+	08- PROFILE BOXES
+	09- GALLERY
+	10- FOOTER
+
+	ABOUT
+	11- GENERAL
+	12-TESTIMONIAL
+
+	12- MEDIA QUERIES
+
+
 
 */
 
@@ -26,9 +34,14 @@ Client: Lucy Van Pelt
 body {
 	line-height: 1.1;
 	font-size: 20px;
-	font-family: 'Sue Ellen Francisco';
+	font-family: Comic Sans MS;
 	font-style: normal;
 	font-weight: 400;
+
+}
+
+span {
+color: red;
 
 }
 
@@ -52,15 +65,16 @@ a:hover {
 
 p { 
 
-margin: 25px 0 25px 0;
+margin: 1.25em 0 1.25em 0;/*25px 0 25px 0*/
 
 }
 
 h1 {
 
 	font-size: 60px;
-	margin-top: 10px;
+	margin-top: .167em;
 	font-family: 'Sue Ellen Francisco';
+
 }
 
 h2 {
@@ -121,13 +135,11 @@ nav {
 
 nav a{
 float: left;
-display: block;
-height: 49px;
-color: white;
-padding: 36px 18px 0 18px;
 font-size:40px;
-
-
+display: block;
+height: 1.225em;/*45px*/
+color: white;
+padding: .90em .45em 0 .45em;/*36px 18px 0 18px */
 
 }
 
@@ -136,64 +148,103 @@ nav a:hover {
 text-decoration: none;
 background-color: black;
 color: #ffffff;
+}
 
+
+#hamburger {
+	font-size: 2em;
+	display: none;
+	background-color: black;
+	color: white;
+	width: 100%;
 
 }
+
+.clearfix:after {
+	content: " ";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
 
 /*----------------------------------------------------------------------------- 
 =04 LOGO & SOCIAL MEDIA 
 -----------------------------------------------------------------------------*/
 
-/* Logo with image replacement for the text */
+
 
 #logo h1{
 	float: left;
-	margin: 20px; 
+	margin: .333em; /*20px*/
 
 }
 
 #logo h2 {
 
 	float: left;
-	margin: 10px 10px 0px 10px;
-	
+	/*margin: .333em .333em 0px .333em;0px 10px 0 10px*/	
 	
 }
 
 
 #socialMedia {
 float: right;
-margin: 5px;
-padding: 30px 0 0 0;
+margin: 0;/*5px*/
+padding: 0 0 0 0;/*30 0  0 0px*/
 
 }
 
 /*----------------------------------------------------------------------------- 
-=05 HOME BANNER
+=05 MUSIC
+-----------------------------------------------------------------------------*/
+#snoopy {
+
+	position: absolute;
+	top: 5%;
+	left: 27%;
+}
+
+audio {
+	float: right;
+	margin-top: 1em;
+}
+
+/*----------------------------------------------------------------------------- 
+=06 HOME BANNER
 -----------------------------------------------------------------------------*/
 
 #homebanner {
 
 	display: block;
 	clear: both;
-	margin: 50 auto px;
-	padding:10px;
+	margin: 1.5em 0 .75em 0;/*50px*/
+	padding:2em;/*10px*/
 	width: 100%;
 	height: auto;
 }
 
+
+iframe {
+
+	width: 100%;
+	height: 720px;
+}
 /*----------------------------------------------------------------------------- 
-=06 BLURB
+=07 BLURB
 -----------------------------------------------------------------------------*/
 
 #blurb {
 	border-color: #BDBDBD #FFFFFF #BDBDBD #FFFFFF; /* beveled border*/
 	border-style: solid;
-	border-width: 1px;
+	border-width: .04em;/*1px*/
 
 	font-size: 25px;
-	margin-bottom: 25px;
-	padding: 15px 20px 25px;
+	margin-bottom: 1em;/*25px*/
+	padding: .6em .80em 1em;/*15px 20px 25px*/
+	text-align: center;
 }
 
 #blurb p {
@@ -201,7 +252,7 @@ padding: 30px 0 0 0;
 }
 
 /*----------------------------------------------------------------------------- 
-=07 PROFILE BOXES
+=08 PROFILE BOXES
 -----------------------------------------------------------------------------*/
 #profile-boxes {
 	overflow: hidden;
@@ -214,12 +265,12 @@ padding: 30px 0 0 0;
 #profile-boxes .profile-box {
 
 	float: left;
-	width: 290px;
-	margin-right: 40px;
+	width: 30%;
+	margin-right: 2em;/*40px*/
 
 }
 
-#profile-boxes .right{ /* flushes profile to the right*/
+#profile-boxes .right { /* flushes profile to the right*/
 
 	
 	margin-right: 0px;
@@ -228,14 +279,14 @@ padding: 30px 0 0 0;
 
 #profile-boxes .profile-box h3 {
 
-	padding: 10px 0 15px 0;
+	padding: .40em 0 .75em 0;/*10 0 15px 0*/
 }
 
 #profile-boxes .profile-box img {
 
-	border: 6px solid #E2E2E2;
+	border: .30px solid #E2E2E2;/*6px*/
 	display: block;
-	margin-bottom: 20px;
+	margin-bottom: 1em;/*20px*/
 }
 
 #profile-boxes .profile-box img:hover {
@@ -247,24 +298,49 @@ padding: 30px 0 0 0;
 	color: black;
 }
 
+#profile-boxes h1 {
+
+	margin-top: 55px;
+	padding-top: 55px;
+	color: red;
+	font-weight: bold;
+
+}
+
+#profile-boxes h2 {
+	font-weight: bold;
+
+}
+
 /*----------------------------------------------------------------------------- 
-=08 PEANUT GALLERY - LIGHT BOXES THROUGH FANCY BOX
+=09 PEANUT GALLERY - LIGHT BOXES THROUGH FANCY BOX
 -----------------------------------------------------------------------------*/
 
 #gallery {
-	padding-top: 50px;
+	padding-top: 1.5em;/*50px*/
 }
 
+.row {
+
+overflow:hidden;
+
+}
 
 #gallery h1 {
-padding: 20px;
+padding: .333em;/*20px*/
 
+}
 
+#gallery a h1{
+
+	color: black;
+	text-align: center;
 }
 .row img {
 	display: block;
 	float: left;
-	margin: 0 4px 4px 0;
+	margin: 0 .20em .2em 0;/*0 4px 4px 0*/
+
 }
 
 .row a:hover {
@@ -280,7 +356,7 @@ padding: 20px;
 
 
 /*----------------------------------------------------------------------------- 
-=09 FOOTER
+=10 FOOTER
 -----------------------------------------------------------------------------*/
 
 footer {
@@ -292,40 +368,40 @@ footer {
 
 }
 
-footer .content-center {
+footer .center-content {
 
-	width: 960px;
+	width: 100%;
 	margin: 0 auto;
-	padding: 20px 0 35px;
+	padding: 1em 1.75em;/*20px 0 35px*/
 
 }
 
 footer .center-content .box-footer {
 
 	float: left;
-	width: 300px;
-	padding-right: 30px;
-	margin-bottom: 40px;
+	width: 30%;/*300px*/
+	padding-right: 1.5em;/*30px*/
+	margin-bottom: 2em;/*40px*/
 
 }
 
 footer  .center-content .middle {
-	width: 260px;
+	width: 27%;/*260*/
 }
 
 footer .center-content h2 {
 	
-	border-bottom: 1px solid white;
+	border-bottom: .033em solid white;/*1px*/
 	color: black;
-	margin-bottom: 2px;
-	padding:7px 0 12px ;
+	margin-bottom: .067em;/*2px*/
+	padding: .233em 0 .4em;/*7px 0 12px */
 
 }
 
 footer .center-content .box-footer ul li {
 
-	padding: 7px 0;
-	border-bottom: 1px solid white;
+	padding:.28em 0;/*9px*/
+	border-bottom: .04em white;/*1px*/
 	color: white;
 	font-size: 25px;
 	font-style: italic;
@@ -336,15 +412,114 @@ footer .center-content .box-footer ul li a:hover {
 
 	text-decoration: none;
 	color: black;
-	font-size: 13px;
+	font-size: .65em;/*13px*/
 	font-style: normal;
 
 }
 
 footer .center-content .middle img {
 
-	margin-top: 10px;
+	margin-top: .65em;/*10px*/
 	display: block;
-	padding: 10px;
+	padding: .50em;/*10px*/
 }
 
+/*ABOUT PAGE STARTS HERE*/
+/*----------------------------------------------------------------------------- 
+=11 ABOUT PAGE - GENERAL 
+-----------------------------------------------------------------------------*/
+
+#leftcol
+{
+float: left;
+width: 50%;
+margin: 0 0 10px 10px;
+/*background-color: #ddd;
+padding: 10px;
+border: 1px solid #666;*/
+}
+
+  
+
+#rightcol
+{
+float: right;
+width: 50%;
+}  
+
+/*----------------------------------------------------------------------------- 
+=12 TESTIMONIALS
+-----------------------------------------------------------------------------*/   
+
+.aboutCharlie img{
+	
+	padding: 100px;
+
+}
+
+.aboutCharlie .last img{
+	width: 100%;
+}
+
+/*----------------------------------------------------------------------------- 
+=13 MEDIA QUERIES
+-----------------------------------------------------------------------------*/
+@media only screen and (min-width:960px) {
+	.center-content {
+		width: 1080px;
+	}
+}
+
+@media only screen and (max-width: 870px) {
+	
+
+		#profile-boxes .right {
+		float:none;
+	}
+iframe {
+
+	width: 600px;
+}
+
+.row{
+
+	display: none;
+}
+@media only screen and (max-width: 630px) {
+	body {
+		font-size: 18px;
+	}
+
+audio {
+	display: none;
+}
+
+	#hamburger {
+		display: block;
+		font-size: 2em;
+	}
+
+	#innerNav {
+		display: none;
+
+	}
+
+	 .box-footer {
+
+		float: none;
+	}
+	
+nav a {
+
+	display: block;
+	background-color: orange;
+	text-align: center;
+	border: 1px solid #cccccc;
+	text-decoration: none;
+	vertical-align: baseline;
+	
+}
+
+#snoopy {
+	display: none;
+}
