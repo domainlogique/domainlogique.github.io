@@ -114,8 +114,13 @@ h6 {
 
 .center-content {
 margin: 0px auto;
-width: 960px
+width: 85%;
 
+}
+
+#main  {
+
+	padding-top: 115px;
 }
 
 /*----------------------------------------------------------------------------- 
@@ -124,6 +129,8 @@ width: 960px
 header {
 
 	background-color: orange;
+	position: fixed;
+	width: 100%;
 
 }
 
@@ -256,7 +263,7 @@ iframe {
 -----------------------------------------------------------------------------*/
 #profile-boxes {
 	overflow: hidden;
-	padding-top: 30px;
+	padding-top: 150px;
 	padding-bottom: 50px;
 	
 }
@@ -511,7 +518,7 @@ audio {
 	}
 	
 nav a {
-
+	float: none;
 	display: block;
 	background-color: orange;
 	text-align: center;
@@ -519,6 +526,11 @@ nav a {
 	text-decoration: none;
 	vertical-align: baseline;
 	
+}
+
+#socialmedia {
+
+	display: none;
 }
 
 #snoopy {
